@@ -846,6 +846,9 @@ local minimizeBtn = top:WaitForChild("TextLabel3") -- –
 
 local textbox = executorFrame:WaitForChild("TextBox")
 
+-- เริ่มต้นให้ top ซ่อน
+top.Visible = false
+
 -- 🔹 EXECUTE COMMAND
 executeBtn.MouseButton1Click:Connect(function()
     	local code = textbox.Text
@@ -907,8 +910,8 @@ game.StarterGui:SetCore("DevConsoleVisible", true)
 wait(0.1)
 print("Look for Roblox bypass.")
 wait(0.5)
-pint("บายไอ้บ้า🤑🤑🤑🤑🤑")
-pint("555555555")
+print("บายไอ้บ้า🤑🤑🤑🤑🤑")
+print("555555555")
 wait(1.1)
 game.StarterGui:SetCore("DevConsoleVisible", false) 
 
