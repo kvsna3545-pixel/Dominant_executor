@@ -3,8 +3,9 @@ wait(0.1)
 print("Look for Roblox bypass.")
 wait(0.5)
 print("บายไอ้บ้า🤑🤑🤑🤑🤑")
+waint(0.9)
 print("555555555")
-wait(1.1)
+wait(1.5)
 game.StarterGui:SetCore("DevConsoleVisible", false) 
 
 
@@ -839,23 +840,29 @@ LMG2L["ImageLabel_2a"]["Size"] = UDim2.new(0, 28, 0, 24);
 -- Players.giruoh_jgry.PlayerGui.ScreenGui.top.UIDragDetector
 LMG2L["UIDragDetector_2b"] = Instance.new("UIDragDetector", LMG2L["top_2"]);
 
--- เริ่มต้นให้ top ซ่อน
-LMG2L["top_2"].Visible = false
+-- เริ่มต้น (ให้ GUI โชว์ ไม่งั้นจะนึกว่าพัง)
+LMG2L["top_2"].Visible = true
 
 -- Logic
 local top = LMG2L["top_2"]
 local mainFrame = LMG2L["script Frame_4"]
 local executorFrame = LMG2L["minutesFrame_1b"]
 local textbox = LMG2L["TextBox_24"]
-local load = LMG2L["TextButton5_22"]
+
+-- ✅ FIX ชื่อปุ่ม
+local loadBtn = LMG2L["TextButton5_23"]
 
 -- Function: Execute
 LMG2L["TextButton3_25"].MouseButton1Click:Connect(function()
     local code = textbox.Text
-    local success, err = pcall(function()
-        loadstring(code)()
-    end)
-    if not success then warn("Execution Error: " .. tostring(err)) end
+    if code and code ~= "" then
+        local success, err = pcall(function()
+            loadstring(code)()
+        end)
+        if not success then
+            warn("Execution Error: " .. tostring(err))
+        end
+    end
 end)
 
 -- Function: Clear
@@ -889,9 +896,22 @@ LMG2L["TextLabel3_3"].InputBegan:Connect(function(input)
     end
 end)
 
--- 🔹 LOAD (ตัวอย่าง)
+-- 🔹 LOAD BUTTON (กันพัง + ปลอดภัยขึ้น)
 loadBtn.MouseButton1Click:Connect(function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/7bZyYKCW",true))()
+    local success, result = pcall(function()
+        return game:HttpGet("https://pastebin.com/raw/7bZyYKCW", true)
+    end)
+
+    if success and result then
+        local func, err = loadstring(result)
+        if func then
+            pcall(func)
+        else
+            warn("Loadstring error: " .. tostring(err))
+        end
+    else
+        warn("HttpGet failed")
+    end
 end)
 
 
