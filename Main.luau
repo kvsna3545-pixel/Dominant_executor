@@ -1,12 +1,10 @@
 --[=[
- d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
-88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
-88      88    88    88            odD'      88      88    88 88ooo88 
-88  ooo 88    88    88          .88'        88      88    88 88~~~88 
-88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
- Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
-
-designed using localmaze gui creator
+ is script by 00script
+ you are kind skid 😂😂😂
+ you not cool
+ you are gay
+ you are femboy
+ Message from 00script
 ]=]
 
 -- Instances: 43 | Scripts: 0 | Modules: 0 | Tags: 0
