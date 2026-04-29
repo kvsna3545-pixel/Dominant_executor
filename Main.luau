@@ -847,6 +847,7 @@ local top = LMG2L["top_2"]
 local mainFrame = LMG2L["script Frame_4"]
 local executorFrame = LMG2L["minutesFrame_1b"]
 local textbox = LMG2L["TextBox_24"]
+local load = LMG2L["TextButton5_22"]
 
 -- Function: Execute
 LMG2L["TextButton3_25"].MouseButton1Click:Connect(function()
