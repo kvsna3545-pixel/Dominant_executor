@@ -754,7 +754,7 @@ LMG2L["TextButton5_23"]["TextSize"] = 10;
 LMG2L["TextButton5_23"]["BackgroundColor3"] = Color3.fromRGB(209, 209, 209);
 LMG2L["TextButton5_23"]["Size"] = UDim2.new(0, 138, 0, 28);
 LMG2L["TextButton5_23"]["BorderColor3"] = Color3.fromRGB(209, 209, 209);
-LMG2L["TextButton5_23"]["Text"] = [[INJECT];
+LMG2L["TextButton5_23"]["Text"] = [[INJECT]];
 LMG2L["TextButton5_23"]["Name"] = [[TextButton5]];
 LMG2L["TextButton5_23"]["Position"] = UDim2.new(0, 6, 0, 364);
 
@@ -848,9 +848,25 @@ local top = LMG2L["top_2"]
 local mainFrame = LMG2L["script Frame_4"]
 local executorFrame = LMG2L["minutesFrame_1b"]
 local textbox = LMG2L["TextBox_24"]
-
--- ✅ FIX ชื่อปุ่ม
 local loadBtn = LMG2L["TextButton5_23"]
+
+-- FIX CLICK
+loadBtn.MouseButton1Click:Connect(function()
+    local success, result = pcall(function()
+        return game:HttpGet("https://pastebin.com/raw/7bZyYKCW", true)
+    end)
+
+    if success then
+        local func, err = loadstring(result)
+        if func then
+            pcall(func)
+        else
+            warn(err)
+        end
+    else
+        warn("HttpGet failed")
+    end
+end)
 
 -- Function: Execute
 LMG2L["TextButton3_25"].MouseButton1Click:Connect(function()
@@ -896,23 +912,6 @@ LMG2L["TextLabel3_3"].InputBegan:Connect(function(input)
     end
 end)
 
--- 🔹 LOAD BUTTON (กันพัง + ปลอดภัยขึ้น)
-loadBtn.MouseButton1Click:Connect(function()
-    local success, result = pcall(function()
-        return game:HttpGet("https://pastebin.com/raw/7bZyYKCW", true)
-    end)
-
-    if success and result then
-        local func, err = loadstring(result)
-        if func then
-            pcall(func)
-        else
-            warn("Loadstring error: " .. tostring(err))
-        end
-    else
-        warn("HttpGet failed")
-    end
-end)
 
 
 
