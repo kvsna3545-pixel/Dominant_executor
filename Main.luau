@@ -1,3 +1,13 @@
+game.StarterGui:SetCore("DevConsoleVisible", true) 
+wait(0.1)
+print("Look for Roblox bypass.")
+wait(0.5)
+print("บายไอ้บ้า🤑🤑🤑🤑🤑")
+print("555555555")
+wait(1.1)
+game.StarterGui:SetCore("DevConsoleVisible", false) 
+
+
 --[=[
  is script by 00script
  you are kind skid 😂😂😂
@@ -829,43 +839,53 @@ LMG2L["ImageLabel_2a"]["Size"] = UDim2.new(0, 28, 0, 24);
 -- Players.giruoh_jgry.PlayerGui.ScreenGui.top.UIDragDetector
 LMG2L["UIDragDetector_2b"] = Instance.new("UIDragDetector", LMG2L["top_2"]);
 
-local player = game.Players.LocalPlayer
-local gui = script.Parent
-
-local top = gui:WaitForChild("top")
-local mainFrame = top:WaitForChild("script Frame")
-local executorFrame = top:WaitForChild("minutesFrame")
-
--- ปุ่ม
-local executeBtn = executorFrame:WaitForChild("TextButton3")
-local clearBtn = executorFrame:WaitForChild("TextButton4")
-local loadBtn = executorFrame:WaitForChild("TextButton5")
-
-local closeBtn = top:WaitForChild("TextLabel") -- ×
-local minimizeBtn = top:WaitForChild("TextLabel3") -- –
-
-local textbox = executorFrame:WaitForChild("TextBox")
-
 -- เริ่มต้นให้ top ซ่อน
-top.Visible = false
+LMG2L["top_2"].Visible = false
 
--- 🔹 EXECUTE COMMAND
-executeBtn.MouseButton1Click:Connect(function()
-    	local code = textbox.Text
-	
-	-- เตือน: ใช้ loadstring ได้เฉพาะเปิดใน Studio + Enable Loadstring ได้เฉพาะ 676767
-	local success, err = pcall(function()
-		loadstring(code)()
-	end)
-	
-	if not success then
-		warn("Error:", err)
+-- Logic
+local top = LMG2L["top_2"]
+local mainFrame = LMG2L["script Frame_4"]
+local executorFrame = LMG2L["minutesFrame_1b"]
+local textbox = LMG2L["TextBox_24"]
+
+-- Function: Execute
+LMG2L["TextButton3_25"].MouseButton1Click:Connect(function()
+    local code = textbox.Text
+    local success, err = pcall(function()
+        loadstring(code)()
+    end)
+    if not success then warn("Execution Error: " .. tostring(err)) end
+end)
+
+-- Function: Clear
+LMG2L["TextButton4_21"].MouseButton1Click:Connect(function()
+    textbox.Text = ""
+end)
+
+-- Function: Toggle Frame
+LMG2L["TextButton2_6"].MouseButton1Click:Connect(function()
+    executorFrame.Visible = true
+    mainFrame.Visible = false
+end)
+
+LMG2L["TextButton2_1d"].MouseButton1Click:Connect(function()
+    executorFrame.Visible = false
+    mainFrame.Visible = true
+end)
+
+-- Function: Close
+LMG2L["TextLabel_29"].InputBegan:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 then
+        LMG2L["ScreenGui_1"]:Destroy()
     end
 end)
 
--- 🔹 CLEAR
-clearBtn.MouseButton1Click:Connect(function()
-    textbox.Text = ""
+-- Function: Minimize
+LMG2L["TextLabel3_3"].InputBegan:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 then
+        mainFrame.Visible = not mainFrame.Visible
+        executorFrame.Visible = false
+    end
 end)
 
 -- 🔹 LOAD (ตัวอย่าง)
@@ -873,47 +893,7 @@ loadBtn.MouseButton1Click:Connect(function()
     loadstring(game:HttpGet("https://pastebin.com/raw/7bZyYKCW",true))()
 end)
 
--- 🔹 CLOSE GUI (×)
-closeBtn.InputBegan:Connect(function(input)
-    if input.UserInputType == Enum.UserInputType.MouseButton1 then
-        gui.Enabled = false
-    end
-end)
 
--- 🔹 MINIMIZE (–)
-minimizeBtn.InputBegan:Connect(function(input)
-    if input.UserInputType == Enum.UserInputType.MouseButton1 then
-        mainFrame.Visible = not mainFrame.Visible
-        executorFrame.Visible = false
-    end
-end)
-
--- 🔹 เปิด executor
-local openExecutorBtn = mainFrame:FindFirstChild("TextButton2")
-if openExecutorBtn then
-    openExecutorBtn.MouseButton1Click:Connect(function()
-        executorFrame.Visible = true
-        mainFrame.Visible = false
-    end)
-end
-
--- 🔹 กลับหน้าแรก (Admin panel)
-local backBtn = executorFrame:FindFirstChild("TextButton2")
-if backBtn then
-    backBtn.MouseButton1Click:Connect(function()
-        executorFrame.Visible = false
-        mainFrame.Visible = true
-    end)
-end
-
-game.StarterGui:SetCore("DevConsoleVisible", true) 
-wait(0.1)
-print("Look for Roblox bypass.")
-wait(0.5)
-print("บายไอ้บ้า🤑🤑🤑🤑🤑")
-print("555555555")
-wait(1.1)
-game.StarterGui:SetCore("DevConsoleVisible", false) 
 
 
 return LMG2L["ScreenGui_1"], require;
