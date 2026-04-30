@@ -33,7 +33,7 @@ LMG2L["top_2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 LMG2L["top_2"]["Size"] = UDim2.new(0, 732, 0, 24);
 LMG2L["top_2"]["Position"] = UDim2.new(0, 230, 0, 68);
 LMG2L["top_2"]["Name"] = [[top]];
-
+LMG2L["top_2"].Visible = true
 
 -- Players.giruoh_jgry.PlayerGui.ScreenGui.top.TextLabel3
 LMG2L["TextLabel3_3"] = Instance.new("TextLabel", LMG2L["top_2"]);
@@ -840,8 +840,7 @@ LMG2L["ImageLabel_2a"]["Size"] = UDim2.new(0, 28, 0, 24);
 -- Players.giruoh_jgry.PlayerGui.ScreenGui.top.UIDragDetector
 LMG2L["UIDragDetector_2b"] = Instance.new("UIDragDetector", LMG2L["top_2"]);
 
--- เริ่มต้น (ให้ GUI โชว์ ไม่งั้นจะนึกว่าพัง)
-LMG2L["top_2"].Visible = true
+
 
 -- Logic
 local top = LMG2L["top_2"]
